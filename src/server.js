@@ -56,16 +56,7 @@ app.get('/template', function (req, res) {
     res.sendFile(path.join(__dirname + '/../templates/index.html'));
 });
 
-app.get('/getEmbedToken', async function (req, res) {
-
-    // Validate whether all the required configurations are provided in config.json
-    // configCheckResult = utils.validateConfig();
-    // if (configCheckResult) {
-    //     return {
-    //         "status": 400,
-    //         "error": configCheckResult
-    //     };
-    // }
+app.get('/getEmbedToken', async function (req, res) {    
     // Get the details like Embed URL, Access token and Expiry
     let result = await embedToken.getEmbedInfo();
 
