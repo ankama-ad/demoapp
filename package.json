@@ -7,7 +7,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\"",
         "dev2": "nodemon ./server.js",        
-        "start": "nnodemon ./server.js",
+        "start": "nodemon ./server.js",
         "buildclient": "cd clientApp && ng build",
         "runclient": "cd clientApp && npm start",
         "devstart": "nodemon --inspect ./src/server.js",
